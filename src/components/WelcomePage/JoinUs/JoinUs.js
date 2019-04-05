@@ -78,7 +78,7 @@ class JoinUs extends Component{
     const { fullNameError, emailError } = this.state.validation;
 
     return(
-      <div className="imageContainer">        
+      <div className="joinUsImage">        
         <div className="container d-none d-sm-block d-sm-none d-md-block">
           <h1 className="display-5 text-white " style={{paddingTop: "240px"}}>Join our waiting list. Be the first to know about it.</h1>
           <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, pulvinar dapibus leo</p>
@@ -87,18 +87,19 @@ class JoinUs extends Component{
               <input className={classnames("form-control", {
                 "is-invalid": fullNameError
               })} type="text" name="fullName" placeholder="Full Name" value={fullName} onChange={this.onChange} />
-              <div className="invalid-feedback">{fullNameError}</div>
+              <div className="invalid-feedback text-left">{fullNameError}</div>
             </div>
             <div className="form-group col">
               <input className={classnames("form-control", {
                 "is-invalid": emailError
               })} type="email" name="email" placeholder="Email Address" value={email} onChange={this.onChange} />
-              <div className="invalid-feedback">{emailError}</div>
+              <div className="invalid-feedback text-left">{emailError}</div>
             </div>
             <div className="form-group col">
               <input type="submit" name="Join" className="form-control btn btn-primary" />
             </div>
           </form>
+          <p className="text-white">We will never spam or give this address away.</p>
         </div>
         <div className="container d-block d-sm-none">
           <h1 className="display-5 text-white " style={{paddingTop: "25px"}}>Join our waiting list. Be the first to know about it.</h1>
@@ -108,20 +109,21 @@ class JoinUs extends Component{
               <div className="form-group col-12">
                 <input className={classnames("form-control", {
                   "is-invalid": fullNameError
-                })} type="text" name="fullName col-12" placeholder="Full Name" value={fullName} onChange={this.onChange} />
-                <div className="invalid-feedback">{fullNameError}</div>
+                })} type="text" name="fullName" placeholder="Full Name" value={fullName} onChange={this.onChange} />
+                <div className="invalid-feedback text-left">{fullNameError}</div>
               </div>
               <div className="form-group col-12">
                 <input className={classnames("form-control", {
                   "is-invalid": emailError
                 })} type="email" name="email" placeholder="Email Address" value={email} onChange={this.onChange} />
-                <div className="invalid-feedback">{emailError}</div>
+                <div className="invalid-feedback text-left">{emailError}</div>
               </div>
               <div className="form-group col-12">
                 <input type="submit" name="Join" className="form-control btn btn-primary" />
               </div>
             </div>
           </form>
+          <p className="text-white">We will never spam or give this address away.</p>
         </div>
       </div>      
     );

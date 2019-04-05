@@ -1,0 +1,49 @@
+img {
+  border-radius: 80%;
+  margin: 30px 90px 0px;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
+
+.imgPhone {
+  border-radius: 80%;
+  margin: 30px 150px 0px;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
+
+.testimonyCard {
+  text-align: center;
+  background-color: #F6F6F6;
+  border-color: #E8E9EA;
+  border-width: 2px;
+  border-radius: 5px
+}
+
+.card-image {
+  width: auto;
+  height: 16vw;
+}
+
+.card-image2 {
+  width: 40%;
+  height: 16vw;
+  margin: auto
+}
+
+.jumbotron {
+  background-color: #F6F6F6;
+  border-radius: 0px;
+}
+
+.testimonyImage {
+  margin-top: -45px;
+}
+
+.push {
+  margin-top: -60px;
+}
+
+.pushCard {
+  margin-top: 5px;
+}
